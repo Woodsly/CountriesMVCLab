@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,8 +23,17 @@ namespace MVCCountriesLab
             Console.WriteLine("Flag colors include: ");
             foreach (string c in displayCountry.Colors)
             {
+                string color = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(c);
+                Console.ForegroundColor = Enum.Parse<ConsoleColor>(color);
+                if (color == "Black")
+                {
+                    Console.BackgroundColor = ConsoleColor.White;
+
+                }
                 Console.WriteLine($"{c}");
+                Console.ResetColor();
             }
+            Console.WriteLine();
         }
     }
 }

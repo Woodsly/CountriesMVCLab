@@ -16,7 +16,7 @@ namespace MVCCountriesLab
             new Country("South Africa", "Africa", new List<string> {"green", "yellow", "white", "red", "blue", "black"}),
             new Country("Australia", "Oceania", new List<string> {"red", "white", "blue"}),
             new Country("Iceland", "Europe", new List<string> {"red", "white", "blue"}),
-            new Country("Kazakhstan", "Asia", new List<string> {"light blue", "yellow"}),
+            new Country("Kazakhstan", "Asia", new List<string> {"cyan", "yellow"}),
             new Country("Spain", "Europe", new List<string> {"red", "yellow"}),
         };
         //constructor
